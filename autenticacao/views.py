@@ -1,8 +1,10 @@
-from django.shortcuts import render
 from django.http import HttpResponse
+from django.shortcuts import render
+
 
 def cadastro(request):
-    return HttpResponse('Cadastro')
+    return render(request, 'cadastro.html')
+
 
 def logar(request):
-    return  HttpResponse('Logar')
+    return HttpResponse('Logar')
