@@ -1,0 +1,45 @@
+.fundo {
+    background-color: #222;
+    color: white;
+}
+
+.box {
+    background-color: #444;
+    width: 500px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0px 20px 0 rgba(255, 207, 0, 0.3);
+}
+
+.span-descricao {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.input-cadastro {
+    margin-top: 15px;
+}
+
+.font-degrade {
+    background-image: linear-gradient(90deg, rgba(255, 207, 0, 1) 0%, rgba(231, 71, 220, 1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    padding-bottom: 10px;
+}
+
+.titulo {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 52px;
+}
+
+.borda-bottom-degrade {
+    border-bottom: 1px solid transparent;
+    border-image: linear-gradient(90deg, rgba(231, 71, 220, 1) 0%, rgba(255, 207, 0, 1) 100%);
+    border-image-slice: 1;
+}
