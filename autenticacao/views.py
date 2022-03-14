@@ -3,7 +3,14 @@ from django.shortcuts import render
 
 
 def cadastro(request):
-    return render(request, 'cadastro.html')
+    if request.method == "GET":
+        return render(request, 'cadastro.html')
+    elif request.method == "POST":
+        username = request.POST.get('username')
+        senha = request.POST.get('password')
+        confirmar_senha = request.POST.get('confirm-password')
+        print(f'{username} | {senha} | {confirmar_senha}')
+        return HttpResponse('Recebido')
 
 
 def logar(request):
