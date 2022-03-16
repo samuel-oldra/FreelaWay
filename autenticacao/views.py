@@ -1,3 +1,4 @@
+from django.contrib.auth.models import User
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
 
@@ -16,6 +17,11 @@ def cadastro(request):
             return redirect('/auth/cadastro')
 
         if len(username.strip()) == 0 or len(senha.strip()) == 0:
+            return redirect('/auth/cadastro')
+
+        user = User.objects.filter(username=username)
+
+        if user.exists():
             return redirect('/auth/cadastro')
 
         return HttpResponse('Recebido')
