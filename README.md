@@ -1,6 +1,19 @@
-# PyStack Week 3.0
+# PyStack Week 3.0 | FreelaWay
 
-Sistema desenvolvido na PyStack Week 3.0
+Sistema de cadastro e pesquisa de vagas de emprego.
+
+## Tecnologias e práticas utilizadas
+- Python
+- Django 4
+- SQLite
+
+## Funcionalidade
+- Autenticação e Cadastro de Usuários
+
+###
+
+![alt text](https://raw.githubusercontent.com/samuel-oldra/PyStack-Week-3.0/main/README_IMGS/inscreva-se.png)
+![alt text](https://raw.githubusercontent.com/samuel-oldra/PyStack-Week-3.0/main/README_IMGS/logar.png)
 
 ## Comandos
 
