@@ -14,6 +14,7 @@ Sistema de cadastro e pesquisa de vagas de emprego.
 
 ![alt text](https://raw.githubusercontent.com/samuel-oldra/PyStack-Week-3.0/main/README_IMGS/inscreva-se.png)
 ![alt text](https://raw.githubusercontent.com/samuel-oldra/PyStack-Week-3.0/main/README_IMGS/logar.png)
+![alt text](https://raw.githubusercontent.com/samuel-oldra/PyStack-Week-3.0/main/README_IMGS/encontrar_jobs.png)
 
 ## Comandos
 
@@ -45,6 +46,17 @@ env\Scripts\deactivate.bat
 (env) django-admin startproject freelaway .
 ```
 
+### Criar app
+```
+(env) python manage.py startapp autenticacao
+(env) python manage.py startapp jobs
+```
+
+### Migrations
+```
+(env) python manage.py makemigrations
+(env) python manage.py migrate
+```
 ### Executar projeto
 ```
 (env) python manage.py runserver
