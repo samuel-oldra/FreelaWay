@@ -83,3 +83,14 @@ def perfil(request):
         request.user.save()
         messages.add_message(request, constants.SUCCESS, 'Dados alterado com sucesso')
         return redirect('/jobs/perfil')
+
+
+def enviar_projeto(request):
+    arquivo = request.FILES.get('file')
+    id_job = request.POST.get('id')
+
+    job = Jobs.objects.get(id=id_job)
+    job.arquivo_final = arquivo
+    job.status = 'AA'
+    job.save()
+    return redirect('/jobs/perfil')
