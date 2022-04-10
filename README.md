@@ -1,6 +1,6 @@
 # PyStack Week 3.0 | FreelaWay
 
-Sistema de cadastro e pesquisa de vagas de emprego.
+Sistema de cadastro, pesquisa e gerenciamento de Jobs (trabalhos).
 
 ## Tecnologias e práticas utilizadas
 - Python
@@ -8,7 +8,9 @@ Sistema de cadastro e pesquisa de vagas de emprego.
 - SQLite
 
 ## Funcionalidade
-- Autenticação e Cadastro de Usuários
+- Autenticação e Cadastro de Usuário
+- Listagem, Detalhes e Aceite de Jobs
+- Atualização de Perfil, Listagem de Jobs Aceitos e Envio de Arquivos
 
 ###
 
