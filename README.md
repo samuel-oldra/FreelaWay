@@ -1,11 +1,16 @@
-# PyStack Week 3.0 | FreelaWay
+# Aplicação usando Python e Django 4
 
-Sistema de cadastro, pesquisa e gerenciamento de Jobs (trabalhos).
+## FreelaWay - PyStack Week 3.0
+
+Aplicação para contratação de freelances.
+
+Desenvolvida uma aplicação completa para conectar empresas e freelances.
 
 ## Tecnologias e práticas utilizadas
 - Python
 - Django 4
 - SQLite
+- Arquitetura MVT
 
 ## Funcionalidade
 - Autenticação e Cadastro de Usuário
