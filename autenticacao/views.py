@@ -9,11 +9,13 @@ def cadastro(request):
     if request.method == "GET":
         if request.user.is_authenticated:
             return redirect('/jobs/encontrar_jobs')
+
         return render(request, 'cadastro.html')
     elif request.method == "POST":
         username = request.POST.get('username')
         senha = request.POST.get('password')
         confirmar_senha = request.POST.get('confirm-password')
+
         # print(f'{username} | {senha} | {confirmar_senha}')
 
         if not senha == confirmar_senha:
@@ -32,6 +34,7 @@ def cadastro(request):
         try:
             user = User.objects.create_user(username=username, password=senha)
             user.save()
+
             messages.add_message(request, constants.SUCCESS, 'Usuário criado com sucesso')
             return redirect('/auth/logar')
         except:
@@ -43,6 +46,7 @@ def logar(request):
     if request.method == "GET":
         if request.user.is_authenticated:
             return redirect('/jobs/encontrar_jobs')
+
         return render(request, 'logar.html')
     elif request.method == "POST":
         username = request.POST.get('username')
