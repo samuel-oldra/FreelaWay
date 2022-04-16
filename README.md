@@ -12,7 +12,7 @@ Desenvolvida uma aplicação completa para conectar empresas e freelances.
 - SQLite
 - Arquitetura MVT
 
-## Funcionalidade
+## Funcionalidades
 - Autenticação e Cadastro de Usuário
 - Listagem, Detalhes e Aceite de Jobs
 - Atualização de Perfil, Listagem de Jobs Aceitos e Envio de Arquivos
