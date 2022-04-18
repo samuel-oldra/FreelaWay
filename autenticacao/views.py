@@ -20,11 +20,15 @@ def cadastro(request):
             return redirect('/auth/cadastro')
 
         user = User.objects.filter(username=username)
-
         if user.exists():
             return redirect('/auth/cadastro')
 
-        return HttpResponse('Recebido')
+        try:
+            user = User.objects.create_user(username=username, password=senha)
+            user.save()
+            return redirect('/auth/logar')
+        except:
+            return redirect('/auth/cadastro')
 
 
 def logar(request):
