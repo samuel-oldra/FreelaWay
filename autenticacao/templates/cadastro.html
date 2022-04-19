@@ -9,6 +9,13 @@
 <div class="box">
     <form action="{% url 'cadastro' %}" method="POST">
         {% csrf_token %}
+        {% if messages %}
+        {% for message in messages %}
+        <div class="alert {{message.tags}}">
+            {{message}}
+        </div>
+        {% endfor %}
+        {% endif %}
         <h1 class="titulo font-degrade borda-bottom-degrade">INSCREVA-SE</h1>
         <br/>
         <span class="span-descricao">Nome de usuário:</span>
