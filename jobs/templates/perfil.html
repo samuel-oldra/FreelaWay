@@ -96,7 +96,6 @@
                                     <h4 class="titulo-job">{{ job.titulo }}</h4>
                                     <br>
                                     <h6 class="titulo-body">Status:</h6>
-
                                     {% if job.status == 'AA' %}
                                         <span class="badge badge-info">Aguardando aprovação</span>
                                     {% elif job.status == 'C' %}
@@ -104,7 +103,6 @@
                                     {% else %}
                                         <span class="badge badge-success">Finalizado</span>
                                     {% endif %}
-
                                     <h6 class="titulo-body">Prazo máximo para entrega:</h6>
                                     <p>{{ job.prazo_entrega }}</p>
                                     <hr style="border-color: yellow">
@@ -123,7 +121,6 @@
                         </div>
                     </div>
                 {% endif %}
-
             {% endfor %}
 
             </tbody>
