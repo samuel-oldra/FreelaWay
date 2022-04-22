@@ -4,13 +4,10 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     {% block 'head' %}
     {% endblock %}
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
     <title>{% block 'title' %}{% endblock %}</title>
-
     <style>
         .font-degrade-nav {
             background-image: linear-gradient(90deg, rgba(255, 207, 0, 1) 0%, rgba(231, 71, 220, 1) 100%);
@@ -24,7 +21,6 @@
     </style>
 </head>
 <body class="fundo">
-
 {% if user.is_authenticated %}
     <nav style="background-color: #444;" class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="/jobs/encontrar_jobs">
@@ -53,10 +49,8 @@
         </div>
     </nav>
 {% endif %}
-
 {% block 'body' %}
 {% endblock %}
-
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>

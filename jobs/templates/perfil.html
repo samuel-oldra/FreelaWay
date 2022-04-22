@@ -1,16 +1,13 @@
 {% extends 'base.html' %}
 {% load static %}
-
 {% block 'head' %}
     <link rel="stylesheet" href="{% static 'jobs/css/encontrar_jobs.css' %}">
     <link rel="stylesheet" href="{% static 'jobs/css/perfil.css' %}">
 {% endblock %}
-
 {% block 'body' %}
     <br>
     <br>
     <div class="container">
-
         {% if messages %}
             {% for message in messages %}
                 <div class="alert {{ message.tags }}">
@@ -18,7 +15,6 @@
                 </div>
             {% endfor %}
         {% endif %}
-
         <div style="width: 60%">
             <form action="{% url 'perfil' %}" method="POST">
                 {% csrf_token %}
@@ -52,7 +48,6 @@
             </tr>
             </thead>
             <tbody>
-
             {% for job in jobs %}
                 <tr>
                     <th scope="row"><img width="100px" src="{{ job.referencias.all.0 }}"></th>
@@ -78,7 +73,6 @@
                         {% endif %}
                     </td>
                 </tr>
-
                 {% if job.status == "C" %}
                     <div class="modal fade" id="modal-job-{{ job.id }}" tabindex="-1" role="dialog"
                          aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -106,7 +100,6 @@
                                     <h6 class="titulo-body">Prazo máximo para entrega:</h6>
                                     <p>{{ job.prazo_entrega }}</p>
                                     <hr style="border-color: yellow">
-
                                     <form action="{% url 'enviar_projeto' %}" method="POST"
                                           enctype="multipart/form-data">
                                         {% csrf_token %}
@@ -122,7 +115,6 @@
                     </div>
                 {% endif %}
             {% endfor %}
-
             </tbody>
         </table>
     </div>

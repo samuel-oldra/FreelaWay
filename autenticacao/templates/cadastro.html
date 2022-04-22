@@ -1,15 +1,12 @@
 {% extends 'base.html' %}
 {% load static %}
-
 {% block 'head' %}
     <link rel="stylesheet" href="{% static 'autenticacao/css/cadastro.css' %}">
 {% endblock %}
-
 {% block 'body' %}
     <div class="box">
         <form action="{% url 'cadastro' %}" method="POST">
             {% csrf_token %}
-
             {% if messages %}
                 {% for message in messages %}
                     <div class="alert {{ message.tags }}">
@@ -17,7 +14,6 @@
                     </div>
                 {% endfor %}
             {% endif %}
-
             <h1 class="titulo font-degrade borda-bottom-degrade">INSCREVA-SE</h1>
             <br/>
             <span class="span-descricao">Nome de usuário:</span>
