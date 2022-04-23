@@ -1,4 +1,5 @@
 from datetime import datetime
+
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
@@ -13,10 +14,8 @@ def encontrar_jobs(request):
     if request.method == "GET":
         preco_minimo = request.GET.get('preco_minimo')
         preco_maximo = request.GET.get('preco_maximo')
-
         prazo_minimo = request.GET.get('prazo_minimo')
         prazo_maximo = request.GET.get('prazo_maximo')
-
         categoria = request.GET.get('categoria')
 
         if preco_minimo or preco_maximo or prazo_minimo or prazo_maximo or categoria:
@@ -91,8 +90,8 @@ def perfil(request):
 
 
 def enviar_projeto(request):
-    arquivo = request.FILES.get('file')
     id_job = request.POST.get('id')
+    arquivo = request.FILES.get('file')
 
     job = Jobs.objects.get(id=id_job)
     job.arquivo_final = arquivo

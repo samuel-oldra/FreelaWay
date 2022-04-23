@@ -9,14 +9,12 @@ def cadastro(request):
     if request.method == "GET":
         if request.user.is_authenticated:
             return redirect('/jobs/encontrar_jobs')
-
-        return render(request, 'cadastro.html')
+        else:
+            return render(request, 'cadastro.html')
     elif request.method == "POST":
         username = request.POST.get('username')
         senha = request.POST.get('password')
         confirmar_senha = request.POST.get('confirm-password')
-
-        # print(f'{username} | {senha} | {confirmar_senha}')
 
         if not senha == confirmar_senha:
             messages.add_message(request, constants.ERROR, 'As senhas não coincidem')
@@ -49,8 +47,8 @@ def logar(request):
     if request.method == "GET":
         if request.user.is_authenticated:
             return redirect('/jobs/encontrar_jobs')
-
-        return render(request, 'logar.html')
+        else:
+            return render(request, 'logar.html')
     elif request.method == "POST":
         username = request.POST.get('username')
         senha = request.POST.get('password')
