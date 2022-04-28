@@ -1,4 +1,4 @@
-# Aplicação usando Python e Django 4.1
+# Aplicação usando Python e Django 4.2
 
 ## FreelaWay - PyStack Week 3.0
 
@@ -8,7 +8,7 @@ Desenvolvida uma aplicação completa para conectar empresas e freelances.
 
 ## Tecnologias e práticas utilizadas
 - Python 3.8
-- Django 4.1
+- Django 4.2
 - SQLite
 - Arquitetura MVT
 
