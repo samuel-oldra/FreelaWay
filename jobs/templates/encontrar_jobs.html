@@ -12,7 +12,7 @@
     <br/>
     <br/>
 
-    <form action="/teste" method="POST">
+    <form action="{% url 'encontrar_jobs' %}" method="GET">
         <div class="row">
             <div class="col-sm">
                 <input type="text" class="form-control" placeholder="Preço mínimo" name="preco_minimo">
@@ -26,6 +26,7 @@
             </div>
             <div class="col-sm">
                 <select class="form-control" name="categoria">
+                    <option value="">-- SELECIONE --</option>
                     <option value="D">Design</option>
                     <option value="EV">Edição de vídeo</option>
                 </select>
