@@ -16,6 +16,8 @@ Sistema de cadastro e pesquisa de vagas de emprego.
 ![alt text](https://raw.githubusercontent.com/samuel-oldra/PyStack-Week-3.0/main/README_IMGS/logar.png)
 ![alt text](https://raw.githubusercontent.com/samuel-oldra/PyStack-Week-3.0/main/README_IMGS/encontrar_jobs.png)
 ![alt text](https://raw.githubusercontent.com/samuel-oldra/PyStack-Week-3.0/main/README_IMGS/encontrar_jobs-detalhes.png)
+![alt text](https://raw.githubusercontent.com/samuel-oldra/PyStack-Week-3.0/main/README_IMGS/perfil.png)
+![alt text](https://raw.githubusercontent.com/samuel-oldra/PyStack-Week-3.0/main/README_IMGS/perfil-detalhes_envio.png)
 
 ## Comandos
 
