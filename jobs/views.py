@@ -1,5 +1,6 @@
 from datetime import datetime
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 from django.contrib.messages import constants
 from django.shortcuts import render, redirect
@@ -7,6 +8,7 @@ from django.shortcuts import render, redirect
 from jobs.models import Jobs
 
 
+@login_required(login_url='/auth/logar')
 def encontrar_jobs(request):
     if request.method == "GET":
         preco_minimo = request.GET.get('preco_minimo')
@@ -56,6 +58,7 @@ def aceitar_job(request, id):
     return redirect('/jobs/encontrar_jobs')
 
 
+@login_required(login_url='/auth/logar')
 def perfil(request):
     if request.method == "GET":
         jobs = Jobs.objects.filter(profissional=request.user)
