@@ -19,12 +19,12 @@ Desenvolvida uma aplicação completa para conectar empresas e freelances.
 
 ###
 
-![alt text](https://raw.githubusercontent.com/samuel-oldra/PyStack-Week-3.0/main/README_IMGS/inscreva-se.png)
-![alt text](https://raw.githubusercontent.com/samuel-oldra/PyStack-Week-3.0/main/README_IMGS/logar.png)
-![alt text](https://raw.githubusercontent.com/samuel-oldra/PyStack-Week-3.0/main/README_IMGS/encontrar_jobs.png)
-![alt text](https://raw.githubusercontent.com/samuel-oldra/PyStack-Week-3.0/main/README_IMGS/encontrar_jobs-detalhes.png)
-![alt text](https://raw.githubusercontent.com/samuel-oldra/PyStack-Week-3.0/main/README_IMGS/perfil.png)
-![alt text](https://raw.githubusercontent.com/samuel-oldra/PyStack-Week-3.0/main/README_IMGS/perfil-detalhes_envio.png)
+![alt text](https://raw.githubusercontent.com/samuel-oldra/FreelaWay/main/README_IMGS/inscreva-se.png)
+![alt text](https://raw.githubusercontent.com/samuel-oldra/FreelaWay/main/README_IMGS/logar.png)
+![alt text](https://raw.githubusercontent.com/samuel-oldra/FreelaWay/main/README_IMGS/encontrar_jobs.png)
+![alt text](https://raw.githubusercontent.com/samuel-oldra/FreelaWay/main/README_IMGS/encontrar_jobs-detalhes.png)
+![alt text](https://raw.githubusercontent.com/samuel-oldra/FreelaWay/main/README_IMGS/perfil.png)
+![alt text](https://raw.githubusercontent.com/samuel-oldra/FreelaWay/main/README_IMGS/perfil-detalhes_envio.png)
 
 ## Comandos
 
