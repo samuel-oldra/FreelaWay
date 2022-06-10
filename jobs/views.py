@@ -55,6 +55,7 @@ def aceitar_job(request, id):
     job.profissional = request.user
     job.reservado = True
     job.save()
+
     return redirect('/jobs/encontrar_jobs')
 
 
@@ -84,6 +85,7 @@ def perfil(request):
         request.user.first_name = primeiro_nome
         request.user.last_name = ultimo_nome
         request.user.save()
+
         messages.add_message(request, constants.SUCCESS, 'Dados alterado com sucesso')
         return redirect('/jobs/perfil')
 
@@ -96,4 +98,5 @@ def enviar_projeto(request):
     job.arquivo_final = arquivo
     job.status = 'AA'
     job.save()
+
     return redirect('/jobs/perfil')

@@ -2,33 +2,35 @@
 {% load static %}
 
 {% block 'head' %}
-<link rel="stylesheet" href="{% static 'autenticacao/css/cadastro.css' %}">
+    <link rel="stylesheet" href="{% static 'autenticacao/css/cadastro.css' %}">
 {% endblock %}
 
 {% block 'body' %}
-<div class="box">
-    <form action="{% url 'cadastro' %}" method="POST">
-        {% csrf_token %}
-        {% if messages %}
-        {% for message in messages %}
-        <div class="alert {{message.tags}}">
-            {{message}}
-        </div>
-        {% endfor %}
-        {% endif %}
-        <h1 class="titulo font-degrade borda-bottom-degrade">INSCREVA-SE</h1>
-        <br/>
-        <span class="span-descricao">Nome de usuário:</span>
-        <input type="text" class="form-control input-cadastro" name="username">
-        <br/>
-        <span class="span-descricao">Senha:</span>
-        <input type="password" class="form-control input-cadastro" name="password">
-        <br/>
-        <span class="span-descricao">Confirmar senha:</span>
-        <input type="password" class="form-control input-cadastro" name="confirm-password">
-        <br/>
-        <input type="submit" value="CADASTRAR" class="btn btn-success btn-lg">
-        <a href="{% url 'logar' %}" class="btn btn-primary btn-lg">LOGIN</a>
-    </form>
-</div>
+    <div class="box">
+        <form action="{% url 'cadastro' %}" method="POST">
+            {% csrf_token %}
+
+            {% if messages %}
+                {% for message in messages %}
+                    <div class="alert {{ message.tags }}">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            {% endif %}
+
+            <h1 class="titulo font-degrade borda-bottom-degrade">INSCREVA-SE</h1>
+            <br/>
+            <span class="span-descricao">Nome de usuário:</span>
+            <input type="text" class="form-control input-cadastro" name="username">
+            <br/>
+            <span class="span-descricao">Senha:</span>
+            <input type="password" class="form-control input-cadastro" name="password">
+            <br/>
+            <span class="span-descricao">Confirmar senha:</span>
+            <input type="password" class="form-control input-cadastro" name="confirm-password">
+            <br/>
+            <input type="submit" value="CADASTRAR" class="btn btn-success btn-lg">
+            <a href="{% url 'logar' %}" class="btn btn-primary btn-lg">LOGIN</a>
+        </form>
+    </div>
 {% endblock %}
