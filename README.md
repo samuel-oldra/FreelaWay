@@ -56,6 +56,11 @@ env\Scripts\deactivate.bat
 (env) django-admin startproject freelaway .
 ```
 
+### Criar super user (Django Administration)
+```
+(env) python manage.py createsuperuser
+```
+
 ### Criar apps
 ```
 (env) python manage.py startapp autenticacao
