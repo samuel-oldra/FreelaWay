@@ -32,7 +32,10 @@ def cadastro(request):
             return redirect('/auth/cadastro')
 
         try:
-            user = User.objects.create_user(username=username, password=senha)
+            user = User.objects.create_user(
+                username=username,
+                password=senha
+            )
             user.save()
 
             messages.add_message(request, constants.SUCCESS, 'Usuário criado com sucesso')
