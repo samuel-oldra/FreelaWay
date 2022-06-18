@@ -1,10 +1,8 @@
 {% extends 'base.html' %}
 {% load static %}
-
 {% block 'head' %}
     <link rel="stylesheet" href="{% static 'jobs/css/encontrar_jobs.css' %}">
 {% endblock %}
-
 {% block 'body' %}
     <div class="container">
         <br/>
@@ -36,7 +34,6 @@
         <br/>
         <h2 class="titulo">JOB’S EM ABERTO:</h2>
         <div class="row justify-content-around">
-
             {% for job in jobs %}
                 <div class="col-6 row-card">
                     <div class="card-job">
@@ -76,7 +73,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="modal fade" id="modal-{{ job.id }}" tabindex="-1" role="dialog"
                      aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
@@ -110,13 +106,11 @@
                                     <br/>
                                     <br/>
                                     <div class="row">
-
                                         {% for referencia in job.referencias.all %}
                                             <div class="col-4">
                                                 <img src="{{ referencia }}" width="100%">
                                             </div>
                                         {% endfor %}
-
                                     </div>
                                     <br/>
                                     <br/>
@@ -129,7 +123,6 @@
                     </div>
                 </div>
             {% endfor %}
-
         </div>
     </div>
 {% endblock %}
