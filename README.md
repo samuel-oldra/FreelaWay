@@ -12,7 +12,7 @@ Desenvolvida uma aplicação completa para conectar empresas e freelances.
 - SQLite
 - Arquitetura MVT
 
-## Funcionalidade
+## Funcionalidades
 - Autenticação e Cadastro de Usuário
 - Listagem, Detalhes e Aceite de Jobs
 - Atualização de Perfil, Listagem de Jobs Aceitos e Envio de Arquivos
@@ -44,8 +44,8 @@ env\Scripts\deactivate.bat
 
 ### Instalar bibliotecas, gravar/instalar requerimentos
 ```
-(env) pip install django
-(env) pip install pillow
+(env) pip install Django
+(env) pip install Pillow
 
 (env) pip freeze > requirements.txt
 (env) pip install -r requirements.txt
@@ -67,6 +67,7 @@ env\Scripts\deactivate.bat
 (env) python manage.py makemigrations
 (env) python manage.py migrate
 ```
+
 ### Executar projeto
 ```
 (env) python manage.py runserver
