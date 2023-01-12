@@ -1,4 +1,4 @@
-# Aplicação usando Python e Django 4
+# Aplicação usando Python e Django 4.1
 
 ## FreelaWay - PyStack Week 3.0
 
@@ -7,8 +7,8 @@ Aplicação para contratação de freelances.
 Desenvolvida uma aplicação completa para conectar empresas e freelances.
 
 ## Tecnologias e práticas utilizadas
-- Python
-- Django 4
+- Python 3.8
+- Django 4.1
 - SQLite
 - Arquitetura MVT
 
@@ -31,8 +31,7 @@ Desenvolvida uma aplicação completa para conectar empresas e freelances.
 ### pip
 ```
 pip list --outdate
-python -m pip install --upgrade pip
-python -m pip install --upgrade setuptools
+pip install --upgrade pip setuptools Django ...
 ```
 
 ### virtualenv (windows)
@@ -58,7 +57,7 @@ env\Scripts\deactivate.bat
 
 ### Criar super user (Django Administration)
 ```
-(env) python manage.py createsuperuser
+(env) python manage.py createsuperuser (admin/admin)
 ```
 
 ### Criar apps
